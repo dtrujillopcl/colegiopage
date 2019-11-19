@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% load static %}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="{% static 'core/js/jquery.min.js' %}"></script>
+    <script src="{% static 'core/js/jquery.bxslider.min.js' %}"></script>
+    <script>
+        $(document).ready(function(){
+          $('.slider').bxSlider({
+            mode: 'horizontal',
+            captions: true,
+            slideMargin: 20,
+            infiniteLopp: true,
+            responsive: true
+          });
+        });
+      </script>
+    <link rel="stylesheet" href="{% static 'core/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/style.css' %}">
+    <title>Colegio CENTILEN</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="{% static 'core/img/Logo.png' %}" alt="">
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Inicio</a>
+                </li>
+                <li>
+                    <a href="#">Contacto</a>
+                </li>
+                <li>
+                    <a href="#">Ubicacion</a>
+                </li>
+                <li>
+                    <a href="#">Vision y Mision</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        
+        <div class="slider">
+            <div><img src="{% static 'core/img/sliderimg1.jpg' %}" tittle="Patio Lenguaje"></div>
+            <div><img src="{% static 'core/img/sliderimg2.jpg' %}" tittle="Niños Jugando"></div>
+        </div>
+        <br>
+
+        {% block contenido %}
+
+
+
+        {% endblock %}
+    </div>
+    <footer>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Ubicacion</a></li>
+            <li><a href="#">Vision y Mision</a></li>
+        </ul>
+    </footer>
+
+</body>
+</html>

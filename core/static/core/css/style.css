@@ -1,0 +1,75 @@
+/*Paletas de colores
+azul marino: #293462
+verde palido: #00818a
+naranjo: #ec9b3b
+amarillo fuerte: #f7be16
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #f7be16;
+    margin: 0;
+}
+
+header{
+    margin: 10px 50px;
+    background-color: #00818a;
+    display: flex;
+    overflow:hidden; 
+    border-radius: 10px;
+}
+
+.logo{
+    margin: 5px;
+    width: 150px;
+}
+
+nav ul{
+    float: left;
+}
+
+nav ul li{
+    list-style: none;
+    float: left;
+}
+
+nav ul li a{
+    text-decoration: none;
+    background: white;
+    margin: 3px;
+    padding:5px;
+    border-radius: 5px;
+}
+
+.container{
+    background: orange;
+    border-radius: 10px;
+}
+
+footer{
+    background: #293462;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li{
+    list-style: none;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.bx-wrapper{
+    background: white;
+    border: none;
+    margin-top: 20px;
+    margin: 20px;
+    align:center;
+}
